@@ -1,0 +1,33 @@
+@import "../../partials/all.scss";
+
+section#news{
+    display: flex;
+    height: $news-size;
+    .news{
+        width: calc(100% - 35px);
+        background: $black;
+        .new{
+            p{
+                text-align: center;
+                color: $white;
+                &.imp{
+                    color: $accent;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+    .bell{
+        flex-basis: $news-size;
+        background: $accent;
+        display: flex;
+        cursor: pointer;
+        &:hover{
+            background: $dgray;
+        }
+        i{
+            margin: auto;
+            color: $white;
+        }
+    }
+}

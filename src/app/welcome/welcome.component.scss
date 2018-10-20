@@ -1,0 +1,122 @@
+@import '../../partials/all.scss';
+
+section#welcome{
+    display: flex;
+
+    .flex{
+        flex: 1;
+    }
+    #bg-accent{
+        position: relative;
+        background-color: $accent;
+        p,a{
+            text-align: right;
+        }
+        &::after{
+            content: '';
+            background-image: url('../../assets/img/dark-before.png');
+            background-size: 200px 800px;
+            width: 200px;
+            height: 800px;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+    }
+    #bg-img{
+        flex: 0.8;
+        background: $black;
+        background-image: url('../../assets/img/player.png');
+        background-size: contain;
+        background-position: right bottom;
+        background-repeat: no-repeat;
+        p{
+            text-align: left;
+        }
+    }
+
+
+    .content{
+        height: 800px;
+        box-sizing: border-box;
+        padding: 200px 80px;
+        p{
+            color: $white;
+        }
+
+        ul{
+            margin-top: 100px;
+            margin-left: -50px;
+            list-style-type: none;
+            li::before {
+                content: ">";
+                color: $white;
+                display: inline-block;
+                width: 1em;
+                margin-left: -1em
+            }
+            li{
+                padding: 5px 0;
+            }
+            li p{
+                display: inline-block;
+            }
+        }
+
+        .msg{
+            margin-right: 120px;
+            .title{
+                margin-bottom: 30px;
+                p{
+                    font-size: 48px;
+                    font-weight: 400;
+                }
+            }
+            .sub-title{
+                margin-bottom: 10px;
+                p{
+                    font-size: 18px;
+                }
+            }
+            .desc{
+                margin-bottom: 10px;
+                p{
+                    font-size: 16px;
+                }
+            }
+        }
+        .more a{
+            text-decoration: none;
+            color: $white;
+        }
+
+        
+
+    }
+
+
+
+}
+
+@media only screen and (max-width: 900px) {
+    section#welcome{
+        flex-direction: column;
+
+        .content{
+            padding: 80px 80px;
+            height: auto;
+            .msg{
+                margin-right: 0;
+            }
+        }
+
+        #bg-accent{
+            p{
+                text-align: left;
+            }
+            &::after{
+                background-image: none;
+            }
+        }
+    }
+}

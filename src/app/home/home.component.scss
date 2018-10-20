@@ -1,0 +1,98 @@
+@import "../../partials/all.scss";
+
+section#home{
+    display: flex;
+    background-image: url("../../assets/img/home-bg.jpg");
+    min-height: 600px;
+    background-size: cover;
+    background-position: center;
+    .posts{
+        .post{
+            *{
+                margin: auto;
+                text-align: center;
+                color: $white;
+            }
+            .title{
+                font-size: 224px;
+            }
+            .sep{
+                width: 100px;
+                height: 1px;
+                margin-top: -30px;
+                margin-bottom: 10px;
+                background: $white;
+            }
+            .desc{
+                margin-bottom: 20px;
+            }
+        
+            .btn.main button{
+                color: $black;
+                background: $white;
+                border: 2px solid transparent;
+                margin-bottom: 100px;
+                padding: 7px 40px;
+                border-radius: 100px;
+                font-weight: bold;
+                cursor: pointer;
+                &:hover{
+                    background: transparent;
+                    border: 2px solid rgba($color: $white, $alpha: 0.5);
+                    color: rgba($color: $white, $alpha: 0.5);
+                }
+            }
+        }
+
+    }
+}
+// owl
+.owl-carousel{
+    .owl-nav{
+        button.owl-prev, button.owl-next{
+            color: white !important;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            font-size: 40px;
+            &:hover{
+                color: $accent !important;
+                background: transparent !important;
+            }
+            &:focus{
+                outline: 0;
+            }
+        }
+        button.owl-prev{
+            left: 10px;
+        }
+        button.owl-next{
+            right: 10px;
+        }
+    }
+}
+
+
+@media only screen and (max-width: 900px) {
+
+    section#home{
+        min-height: 300px;
+
+        .posts{
+            .post{
+                .title{
+                    font-size: 72px;
+                }
+                .sep{
+                    margin-top: -10px;
+                    margin-bottom: 10px;
+                }
+                .desc{
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+
+
+}

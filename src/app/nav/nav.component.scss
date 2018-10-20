@@ -1,0 +1,78 @@
+@import '../../partials/all';
+nav{
+    background-color: $black;
+    padding: 30px 0;
+    ul{
+        display: flex;
+        list-style-type: none;
+        justify-content: center;
+        padding: 10px 30px;
+        border-radius: 20px;
+
+        li{
+            flex-basis: 70px;
+            margin: 0 5px;
+            text-align: center;
+            a{
+                text-decoration: none;
+                color: white;
+                &.active::before{
+                    content: '[';
+                }
+                &.active::after{
+                    content: ']';
+                }
+                &:hover{
+                    color: $accent;
+                }
+            }
+
+        }
+        &.show{
+            display: flex;
+        }
+    }
+
+    #toggle{
+        flex: 1;
+        text-align: right;
+        margin-right: 30px;
+        display: none;
+        
+        i{
+            cursor: pointer;
+            color: $white;
+            font-size: 24px;
+            
+            &:hover{
+                color: $gray;
+            }
+        }
+    }
+
+}
+
+
+@media only screen and (max-width: 900px) {
+
+    nav{
+        position: relative;
+        ul{
+            z-index: 1;
+            flex-direction: column;
+            position: absolute;
+            right: 30px;
+            top: 60px;
+            background-color: $dgray;
+            display: none;
+            li{
+                padding: 10px 20px;
+                flex-basis: 30px;
+            }
+        }
+        #toggle{
+            display: block;
+        }
+    }
+
+}

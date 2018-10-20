@@ -1,0 +1,30 @@
+section#contact
+    .title
+        p Contact us
+    
+    .form
+        form()
+            .row
+                input#name(type="text", name="name", placeholder="your name")
+                input#email(type="text", name="email", placeholder="email")
+                input#phone(type="text", name="phone", placeholder="phone")
+            .message
+                textarea#msg(name="msg", cols="30", rows="10")
+            .submit
+                input(type="submit", value="Send")
+
+    .phone
+        p 800 555 6444
+
+    .socials
+        .social: a(href=""): i.fab.fa-pinterest
+        .social: a(href=""): i.fab.fa-twitter
+        .social: a(href=""): i.fab.fa-facebook-f
+        .social: a(href=""): i.fab.fa-instagram
+        .social: a(href=""): i.fab.fa-google-plus-g
+    
+    .credits
+        p Basket &copy; 2018 .&nbsp; 
+        a(href="") Privacy Policy
+
+

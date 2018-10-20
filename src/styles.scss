@@ -1,1 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+body,
+p,
+ul{
+    margin: 0px;
+    padding: 0px;
+}
+a{
+    display: block;
+}
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: all 150ms ease-in-out;
+}
+

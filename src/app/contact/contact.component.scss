@@ -1,0 +1,119 @@
+@import "../../partials/all.scss";
+
+section#contact{
+    display: flex;
+    flex-direction: column;
+
+    padding: 50px 0;
+    padding-bottom: 20px;
+
+    .title, .form, .phone, .socials, .credits{
+        margin: auto;
+    }
+    p, a, .submit{
+        text-align: center;
+    }
+
+
+    .title{
+        p{
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 48px;
+            margin: 30px 0;
+        }
+    }
+
+    .form{
+        width: 100%;
+        form{
+            width: 100%;
+            .row{
+                display: flex;
+                flex-wrap: wrap;
+                width: 100%;
+                justify-content: center;
+                margin-bottom: 10px;
+                input{
+                    flex-basis: 200px;
+                    border: 1px solid $lgray;
+                    border-radius: 15px;
+                    padding: 5px 10px;
+                    margin: 0 15px;
+                    
+                    &:hover{
+                        border: 1px solid $dgray;
+                    }
+                }
+            }
+            .message{
+                width: 100%;
+                text-align: center;
+                textarea{
+                    box-sizing: border-box;
+                    padding: 5px 10px;
+                    border: 1px solid $lgray;
+                    border-radius: 15px;
+                    width: 55%;
+                    max-width: 730px;
+                    &:hover{
+                        border: 1px solid $dgray;
+                    }
+                }
+            }
+
+            .submit input{
+                margin: 30px 0;
+                padding: 5px 70px;
+                color: $white;
+                background-color: $accent;
+                border-radius: 50px;
+                border: 2px solid transparent;
+                cursor: pointer;
+                &:hover{
+                    background-color: $white;
+                    border: 2px solid $accent;
+                    color: $accent;
+                }
+            }
+
+        }
+    }
+    .phone{
+        margin-bottom: 30px;
+        p{
+            letter-spacing: 2px;
+            font-size: 48px;
+            font-weight: bold;
+        }
+    }
+    
+
+    .socials{
+        display: inline-flex;
+        margin-bottom: 10px;
+        .social{
+            margin: 5px;
+            a{
+                padding: 5px;
+                color: $gray;
+                
+                &:hover{
+                    color: $dgray;
+                }
+            }
+        }
+    }
+    .credits{
+        p,a{
+            display: inline-flex;
+            color: $gray;
+        }
+        a{
+            text-decoration: none;
+        }
+        a:hover{
+            color: $dgray;
+        }
+    }
+}
