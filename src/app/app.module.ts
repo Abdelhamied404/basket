@@ -11,6 +11,7 @@ import { TeamComponent } from './team/team.component';
 import { TestimonialsComponent } from './testimonials/testimonials.component';
 import { ContactComponent } from './contact/contact.component';
 import { OwlModule } from 'ngx-owl-carousel';
+import { GalleryComponent } from './gallery/gallery.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { OwlModule } from 'ngx-owl-carousel';
     WelcomeComponent,
     TeamComponent,
     TestimonialsComponent,
-    ContactComponent
+    ContactComponent,
+    GalleryComponent
   ],
   imports: [
     BrowserModule,

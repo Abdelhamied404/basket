@@ -13,7 +13,8 @@ nav{
             flex-basis: 70px;
             margin: 0 5px;
             text-align: center;
-            a{
+            a, p{
+                cursor: pointer;
                 text-decoration: none;
                 color: white;
                 &.active::before{

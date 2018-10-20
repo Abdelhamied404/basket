@@ -18,6 +18,14 @@ export class NavComponent implements OnInit {
         $("nav ul").toggleClass("show");
       });
 
+      var hash = location.hash;
+      var target = $("section"+hash);
+
+      $('html, body').animate({
+        scrollTop: target.offset().top
+      }, 500);
+
+      
     });
 
   }

@@ -6,6 +6,7 @@ section#news{
     .news{
         width: calc(100% - 35px);
         background: $black;
+        z-index: 0;
         .new{
             p{
                 text-align: center;
